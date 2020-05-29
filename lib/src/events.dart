@@ -4,11 +4,13 @@ class StartCallAction {
   final String callUUID;
   final String handle;
   final String name;
+  final bool isVideo;
 
   StartCallAction._new(Map<dynamic, dynamic> arguments)
       : this.callUUID = arguments['callUUID'],
         this.handle = arguments['handle'],
-        this.name = arguments['name'];
+        this.name = arguments['name'],
+        this.isVideo = arguments['isVideo'];
 }
 
 class AnswerCallAction {
